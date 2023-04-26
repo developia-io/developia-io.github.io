@@ -15,6 +15,9 @@ export default function Header() {
 
         <div className={styles.menu}>
           <div className={styles.link}>
+            <Link href="#services">Services</Link>
+            <Link href="#technologies">Technologies</Link>
+            <Link href="#works">Works</Link>
             <Link href="/about-us">About Us</Link>
           </div>
           <Button label="Get in Touch" navigateTo="get-in-touch" />

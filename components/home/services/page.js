@@ -4,7 +4,7 @@ import servicesIcons from "@/public/home/services/services";
 
 export default function Services() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="services">
       <div className={styles.container}>
         <h1 className="title">Services</h1>
 

@@ -4,7 +4,7 @@ import styles from "./technologies.module.css";
 
 export default function Technologies() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="technologies">
       <div className={styles.title}>
         <h1 className="title">WHAT TECHNOLOGIES DO WE USE?</h1>
       </div>

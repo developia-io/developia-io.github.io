@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 
 function OurWorks() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="works">
       <div className={styles.header}>
         <h1 className="title">Our Works</h1>
         <p>
