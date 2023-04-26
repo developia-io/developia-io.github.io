@@ -1,0 +1,21 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.team_img {
+  width: 100vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.chapters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0px;
+  gap: 50px;
+  width: 100%;
+}

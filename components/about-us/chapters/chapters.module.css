@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  gap: 50px;
+}
+
+.chapter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chapter > p {
+  max-width: 300px;
+  color: rgba(21, 20, 57, 0.4);
+}
