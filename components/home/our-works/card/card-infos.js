@@ -93,6 +93,15 @@ const card_infos = [
     bodyImage: card_body_imgs[10],
     bgColor: "#fff",
   },
+  {
+    id: "11",
+    title: "D-ONE",
+    description: "D-ONE",
+    color: "#000",
+    logo: partners[4],
+    bodyImage: card_body_imgs[11],
+    bgColor: "#fff",
+  },
 ];
 
 export default card_infos;

@@ -25,7 +25,7 @@ export default function OurTeam() {
         <div className={styles.card}>
           <Image className={styles.image} src={mert} alt="mert" width={120} />
           <h2>Mert Yavuz</h2>
-          <p>The God Father</p>
+          <p>CBO</p>
         </div>
       </div>
 

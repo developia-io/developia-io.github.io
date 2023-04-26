@@ -15,6 +15,7 @@
   height: 300px;
   border-radius: 0px 20px 20px 0px;
   box-shadow: 141px 78px 30px #d6fded;
+  z-index: -1;
 }
 
 .purple_rectangle {
@@ -26,6 +27,7 @@
   height: 150px;
   border-radius: 0px 0px 0px 20px;
   box-shadow: -80px 80px 80px #cecfff;
+  z-index: -1;
 }
 
 .yellow_rectangle {
@@ -38,6 +40,7 @@
   height: 100px;
   border-radius: 20px;
   box-shadow: 55px -35px 60px #f8e8a8;
+  z-index: -1;
 }
 
 .red_rectangle {
@@ -50,4 +53,5 @@
   height: 150px;
   border-radius: 20px 0px 0px 20px;
   box-shadow: -35px 32px 94px #eb8f9d;
+  z-index: -1;
 }

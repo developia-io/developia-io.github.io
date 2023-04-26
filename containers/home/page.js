@@ -7,6 +7,7 @@ import Clients from "@/components/home/clients/page";
 import OurWorks from "@/components/home/our-works/page";
 
 import { Inter } from "next/font/google";
+import Services from "@/components/home/services/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Hero />
       <WhatsDevelopia />
       <WhatWeDo />
+      <Services />
       <Technologies />
       <Clients />
       <OurWorks />
