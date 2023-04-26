@@ -16,22 +16,18 @@ export default function GetInTouchPage() {
           <div className={styles.content}>
             <div className={styles.information}>
               <Image src={phone} alt="phone" width={15} />
-              <div className={styles.address}>+ 532 111 11 11</div>
+              <div className={styles.address}>0212 800 02 00</div>
             </div>
             <div className={styles.information}>
               <Image src={mail} alt="mail" width={15} />
-              <div className={styles.address}>developia@mail.com</div>
+              <div className={styles.address}>contact@developia.io</div>
             </div>
           </div>
 
-          <div className={styles.line}></div>
-
           <div className={styles.map}>
-            <h2 style={{ color: "#1E0E62" }}>Find Us On Map</h2>
-            <div className={styles.description}>Developia Address</div>
             <iframe
               width="500"
-              height="200"
+              height="330"
               loading="lazy"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
