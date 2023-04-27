@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^developia\.io [NC]
+RewriteRule ^(.*)$ https://www.developia.io/$1 [L,R=301]
