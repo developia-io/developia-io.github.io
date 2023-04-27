@@ -26,7 +26,7 @@ function OurWorks() {
         <Swiper
           modules={[Pagination]}
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={2}
           pagination={{ clickable: true }}
         >
           {card_infos.map((card_info, index) => (

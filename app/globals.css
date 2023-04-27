@@ -41,6 +41,10 @@ a {
   z-index: 0;
 }
 
+.swiper-slide {
+  width: auto !important;
+}
+
 input {
   border: 2px solid #ebeaed;
   border-radius: 100px;

@@ -43,7 +43,7 @@ export default function GetInTouchPage() {
             We are always looking for a next great project.
           </div>
           <form
-            action="mailto:oruchan.asar@gmail.com"
+            action="mailto:contact@developia.io"
             method="post"
             enctype="text/plain"
             className={styles.form}
