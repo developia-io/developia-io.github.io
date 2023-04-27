@@ -26,7 +26,6 @@ export default function GetInTouchPage() {
 
           <div className={styles.map}>
             <iframe
-              width="500"
               height="330"
               loading="lazy"
               allowfullscreen
