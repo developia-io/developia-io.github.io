@@ -54,20 +54,20 @@ function Header() {
 
         <div className={styles.menu} id="menu">
           <div className={styles.link}>
-            <Link href="#services" onClick={() => toggle()}>
+            <Link href="#services" onClick={isOpen ? "" : () => toggle()}>
               Services
             </Link>
-            <Link href="#technologies" onClick={() => toggle()}>
+            <Link href="#technologies" onClick={isOpen ? "" : () => toggle()}>
               Technologies
             </Link>
-            <Link href="#works" onClick={() => toggle()}>
+            <Link href="#works" onClick={isOpen ? "" : () => toggle()}>
               Works
             </Link>
-            <Link href="/about-us" onClick={() => toggle()}>
+            <Link href="/about-us" onClick={isOpen ? "" : () => toggle()}>
               About Us
             </Link>
           </div>
-          <div onClick={() => toggle()}>
+          <div onClick={isOpen ? "" : () => toggle()}>
             <Button label="Get in Touch" navigateTo="get-in-touch" />
           </div>
         </div>
