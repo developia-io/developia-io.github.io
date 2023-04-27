@@ -4,7 +4,7 @@ import heroImg from "@/public/home/hero-img.png";
 
 export default function Hero() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <div className={styles.hero}>
         <div className={styles.title}>
           <div className={styles.header_md}>Next Generation</div>

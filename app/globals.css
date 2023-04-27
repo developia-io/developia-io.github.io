@@ -30,12 +30,6 @@ a {
   justify-content: center;
 }
 
-.container {
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 1rem;
-}
-
 .title {
   color: #1e0e62;
   font-weight: 700;
