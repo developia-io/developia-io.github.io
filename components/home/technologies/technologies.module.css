@@ -9,8 +9,7 @@
   display: flex;
   width: 100%;
   max-width: var(--max-width);
-  margin-bottom: 32px;
-  margin-top: 100px;
+  margin: 100px 2% 32px 2%;
 }
 
 .sub_title {
@@ -18,8 +17,7 @@
   justify-content: flex-end;
   width: 100%;
   max-width: var(--max-width);
-  margin-top: 32px;
-  margin-bottom: 100px;
+  margin: 32px 2% 100px 2%;
 }
 
 .container {
@@ -57,4 +55,14 @@
   display: flex;
   gap: 50px;
   animation: ticker-reverse-kf 100s linear infinite;
+}
+
+@media only screen and (max-width: 1150px) {
+  .title {
+    margin: 100px 2% 32px 5%;
+  }
+
+  .sub_title {
+    margin: 32px 5% 100px 2%;
+  }
 }
