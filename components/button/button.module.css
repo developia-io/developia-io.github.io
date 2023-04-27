@@ -6,4 +6,5 @@
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: 700;
+  width: max-content;
 }

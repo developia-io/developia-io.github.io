@@ -19,6 +19,17 @@
   max-width: var(--max-width);
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.developia {
+  display: flex;
+  align-items: center;
+}
+
 .menu {
   display: flex;
   gap: 2rem;
@@ -30,7 +41,50 @@
   gap: 1rem;
 }
 
+.link > * {
+  width: max-content;
+}
+
 .link > a:hover {
   transition: all 0.3s ease-out;
   color: #005cb9;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.cross {
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+
+  .wrapper {
+    margin: 35px 0;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .link {
+    flex-direction: column;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 }
