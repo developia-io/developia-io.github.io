@@ -25,7 +25,7 @@ export default function Chapters({
           <p>{text2}</p>
         </div>
       </div>
-      <Image src={imageSrc} alt="" />
+      <Image src={imageSrc} alt="chapter" />
     </div>
   );
 }

@@ -15,6 +15,7 @@
   justify-content: center;
   max-width: 50%;
   gap: 50px;
+  margin: 0 2%;
 }
 
 .chapter {
@@ -26,4 +27,24 @@
 .chapter > p {
   max-width: 300px;
   color: rgba(21, 20, 57, 0.4);
+}
+
+@media only screen and (max-width: 610px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .wrapper > img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 611px) and (max-width: 768px) {
+  .wrapper > img {
+    width: 300px;
+    height: auto;
+  }
 }
