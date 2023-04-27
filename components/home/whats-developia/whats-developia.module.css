@@ -18,6 +18,10 @@
   gap: 20px;
 }
 
+.head > h1 {
+  text-align: center;
+}
+
 .description {
   text-align: center;
   font-weight: 500;
