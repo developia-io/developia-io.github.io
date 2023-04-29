@@ -104,8 +104,8 @@
   .hero_img {
     height: auto;
     position: relative;
-    top: 30%;
-    left: -50%;
+    top: 25%;
+    left: -60%;
   }
 }
 
@@ -139,8 +139,8 @@
     width: 300px;
     height: auto;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 35%;
+    left: 40%;
   }
 }
 
@@ -318,6 +318,7 @@
   }
 
   .hero_img {
+    width: 530px;
     height: auto;
     position: relative;
     left: -2%;

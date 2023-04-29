@@ -8,8 +8,25 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useEffect, useState } from "react";
 
 function OurWorks() {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [slidesPerView, setslidesPerView] = useState(1);
+
+  window.onresize = function () {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    console.log(screen.width);
+    screen.width < 1150 && screen.width > 750
+      ? setslidesPerView(2)
+      : screen.width < 750
+      ? setslidesPerView(1)
+      : setslidesPerView(3);
+  }, [width]);
+
   return (
     <div className={styles.wrapper} id="works">
       <div className={styles.header}>
@@ -26,8 +43,8 @@ function OurWorks() {
         <Swiper
           modules={[Pagination]}
           spaceBetween={50}
-          slidesPerView={2}
-          pagination={{ clickable: true }}
+          slidesPerView={slidesPerView}
+          pagination={{ clickable: true, dynamicBullets: true }}
         >
           {card_infos.map((card_info, index) => (
             <SwiperSlide key={index}>
