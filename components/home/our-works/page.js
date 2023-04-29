@@ -11,15 +11,14 @@ import "swiper/css/navigation";
 import { useEffect, useState } from "react";
 
 function OurWorks() {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState();
   const [slidesPerView, setslidesPerView] = useState(1);
 
-  window.onresize = function () {
-    setWidth(window.innerWidth);
-  };
-
   useEffect(() => {
-    console.log(screen.width);
+    window.onresize = function () {
+      setWidth(window.innerWidth);
+    };
+
     screen.width < 1150 && screen.width > 750
       ? setslidesPerView(2)
       : screen.width < 750
