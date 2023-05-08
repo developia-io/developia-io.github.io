@@ -1,10 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import Tilty from "react-tilty";
 import styles from "./whats-developia.module.css";
 import paintBrush from "@/public/home/paint-brush.png";
 import code from "@/public/home/code.png";
 import toggleOn from "@/public/home/toggle-on.png";
 
-export default function WhatsDevelopia() {
+function WhatsDevelopia() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -19,32 +22,55 @@ export default function WhatsDevelopia() {
         </div>
 
         <div className={styles.card_container}>
-          <div className={styles.card}>
-            <Image src={paintBrush} alt="paint brush" />
-            <h2>New Design</h2>
-            <p>
+          <Tilty
+            style={{ transformStyle: "preserve-3d" }}
+            className={styles.card}
+          >
+            <Image
+              src={paintBrush}
+              alt="paint brush"
+              style={{ transform: "translateZ(30px)" }}
+            />
+            <h2 style={{ transform: "translateZ(30px)" }}>New Design</h2>
+            <p style={{ transform: "translateZ(30px)" }}>
               Carefully crafted precise design, with harmonious typography and
               perfect padding around every component
             </p>
-          </div>
-          <div className={styles.card}>
-            <Image src={code} alt="code" />
-            <h2>New Code</h2>
-            <p>
+          </Tilty>
+          <Tilty
+            style={{ transformStyle: "preserve-3d" }}
+            className={styles.card}
+          >
+            <Image
+              src={code}
+              alt="code"
+              style={{ transform: "translateZ(30px)" }}
+            />
+            <h2 style={{ transform: "translateZ(30px)" }}>New Code</h2>
+            <p style={{ transform: "translateZ(30px)" }}>
               Built with HTML, CSS and JS. Startup’s code is easy to under-stand
               and easy to change. No other frameworks needed.
             </p>
-          </div>
-          <div className={styles.card}>
-            <Image src={toggleOn} alt="toggle on" />
-            <h2>New Solutions</h2>
-            <p>
+          </Tilty>
+          <Tilty
+            style={{ transformStyle: "preserve-3d" }}
+            className={styles.card}
+          >
+            <Image
+              src={toggleOn}
+              alt="toggle on"
+              style={{ transform: "translateZ(30px)" }}
+            />
+            <h2 style={{ transform: "translateZ(30px)" }}>New Solutions</h2>
+            <p style={{ transform: "translateZ(30px)" }}>
               Transform your ideas into reality and launch a beautiful site with
               minimal frustration.
             </p>
-          </div>
+          </Tilty>
         </div>
       </div>
     </div>
   );
 }
+
+export default WhatsDevelopia;
