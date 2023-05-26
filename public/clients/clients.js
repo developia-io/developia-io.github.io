@@ -5,6 +5,6 @@ import Rocinante from "./Rocinante.png";
 import WeHearYou from "./WeHearYou.svg";
 import arcelik from "./arcelik.svg";
 
-const clients = [Ancient, Dogus_grubu, Ingage, , Rocinante, WeHearYou, arcelik];
+const clients = [Ancient, Dogus_grubu, Rocinante, WeHearYou];
 
 export default clients;

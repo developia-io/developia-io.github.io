@@ -2,15 +2,15 @@ import card_body_imgs from "@/public/home/card-body-imgs/card-body-imgs";
 import partners from "@/public/partners/partners";
 
 const card_infos = [
-  {
-    id: "1",
-    title: "Ingage",
-    description: "Ingage Web Page",
-    color: "#fff",
-    logo: partners[9],
-    bodyImage: card_body_imgs[4],
-    bgColor: "#212529",
-  },
+  // {
+  //   id: "1",
+  //   title: "Ingage",
+  //   description: "Ingage Web Page",
+  //   color: "#fff",
+  //   logo: partners[9],
+  //   bodyImage: card_body_imgs[4],
+  //   bgColor: "#212529",
+  // },
   {
     id: "2",
     title: "We Hear You",
