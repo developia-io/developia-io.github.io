@@ -54,13 +54,25 @@ function Header() {
 
         <div className={styles.menu} id="menu">
           <div className={styles.link}>
-            <Link href="#services" onClick={isOpen ? "" : () => toggle()}>
+            <Link
+              href="/#services"
+              scroll={false}
+              onClick={isOpen ? "" : () => toggle()}
+            >
               Services
             </Link>
-            <Link href="#technologies" onClick={isOpen ? "" : () => toggle()}>
+            <Link
+              href="/#technologies"
+              scroll={false}
+              onClick={isOpen ? "" : () => toggle()}
+            >
               Technologies
             </Link>
-            <Link href="#works" onClick={isOpen ? "" : () => toggle()}>
+            <Link
+              href="/#works"
+              scroll={false}
+              onClick={isOpen ? "" : () => toggle()}
+            >
               Works
             </Link>
             <Link href="/about-us" onClick={isOpen ? "" : () => toggle()}>
