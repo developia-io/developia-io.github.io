@@ -1,14 +1,14 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Card from "./card/page";
 import styles from "./our-works.module.css";
 import card_infos from "./card/card-infos";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useEffect, useState } from "react";
 
 function OurWorks() {
   const [width, setWidth] = useState();
@@ -40,10 +40,16 @@ function OurWorks() {
 
       <div className={styles.card_container}>
         <Swiper
-          modules={[Pagination]}
           spaceBetween={50}
           slidesPerView={slidesPerView}
-          pagination={{ clickable: true, dynamicBullets: true }}
+          loop={true}
+          speed={3000}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          modules={[Autoplay]}
         >
           {card_infos.map((card_info, index) => (
             <SwiperSlide key={index}>

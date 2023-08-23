@@ -1,28 +1,55 @@
+"use client";
+
 import logos from "@/public/logos/logos";
 import Image from "next/image";
 import styles from "./technologies.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 export default function Technologies() {
   return (
     <div className={styles.wrapper} id="technologies">
-      <div className={styles.title}>
-        <h1 className="title">WHAT TECHNOLOGIES DO WE USE?</h1>
-      </div>
-      <div className={styles.container}>
-        <div className={styles.img_ticker}>
-          {logos?.map((logo, index) => (
-            <Image src={logo} alt="logo" key={index} />
-          ))}
-        </div>
-        <div className={styles.img_reverse_ticker}>
-          {logos?.map((logo, index) => (
-            <Image src={logo} alt="logo" key={index} />
-          ))}
-        </div>
-      </div>
-      <div className={styles.sub_title}>
-        <h1 style={{ color: "#1e0e62" }}>AND MUCH MORE!</h1>
-      </div>
+      <h1 className={`${styles.title} title`}>WHAT TECHNOLOGIES DO WE USE?</h1>
+      <Swiper
+        slidesPerView={8}
+        spaceBetween={30}
+        loop={true}
+        speed={2500}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        modules={[Autoplay]}
+        className={styles.mySwiper}
+      >
+        {logos.map((logo, index) => (
+          <SwiperSlide key={index}>
+            <Image src={logo} alt="logo" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Swiper
+        slidesPerView={8}
+        spaceBetween={30}
+        loop={true}
+        speed={2500}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+          reverseDirection: true,
+        }}
+        modules={[Autoplay]}
+        className={styles.mySwiper}
+      >
+        {logos.map((logo, index) => (
+          <SwiperSlide key={index}>
+            <Image src={logo} alt="logo" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <h1 className={styles.sub_title}>AND MUCH MORE!</h1>
     </div>
   );
 }
