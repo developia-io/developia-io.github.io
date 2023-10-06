@@ -31,6 +31,7 @@ export default function Card({ cardInfo }) {
               src={cardInfo.bodyImage}
               alt={cardInfo.description}
               width={333.33}
+              height={333}
             />
           </div>
         ) : (

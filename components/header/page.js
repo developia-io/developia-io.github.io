@@ -40,6 +40,7 @@ function Header() {
             src={hamburger}
             alt="hamburger"
             width={30}
+            height={30}
             onClick={() => toggle()}
           />
           <Image
@@ -48,6 +49,7 @@ function Header() {
             src={cross}
             alt="cross"
             width={30}
+            height={30}
             onClick={() => toggle()}
           />
         </div>
@@ -57,29 +59,29 @@ function Header() {
             <Link
               href="/#services"
               scroll={false}
-              onClick={isOpen ? "" : () => toggle()}
+              onClick={isOpen ? null : () => toggle()}
             >
               Services
             </Link>
             <Link
               href="/#technologies"
               scroll={false}
-              onClick={isOpen ? "" : () => toggle()}
+              onClick={isOpen ? null : () => toggle()}
             >
               Technologies
             </Link>
             <Link
               href="/#works"
               scroll={false}
-              onClick={isOpen ? "" : () => toggle()}
+              onClick={isOpen ? null : () => toggle()}
             >
               Works
             </Link>
-            <Link href="/about-us" onClick={isOpen ? "" : () => toggle()}>
+            <Link href="/about-us" onClick={isOpen ? null : () => toggle()}>
               About Us
             </Link>
           </div>
-          <div onClick={isOpen ? "" : () => toggle()}>
+          <div onClick={isOpen ? null : () => toggle()}>
             <Button label="Get in Touch" navigateTo="get-in-touch" />
           </div>
         </div>

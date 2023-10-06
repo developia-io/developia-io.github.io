@@ -15,11 +15,11 @@ export default function GetInTouchPage() {
           </div>
           <div className={styles.content}>
             <div className={styles.information}>
-              <Image src={phone} alt="phone" width={15} />
+              <Image src={phone} alt="phone" width={15} height={15} />
               <div className={styles.address}>0212 800 02 00</div>
             </div>
             <div className={styles.information}>
-              <Image src={mail} alt="mail" width={15} />
+              <Image src={mail} alt="mail" width={15} height={15} />
               <div className={styles.address}>contact@developia.io</div>
             </div>
           </div>
@@ -28,8 +28,8 @@ export default function GetInTouchPage() {
             <iframe
               height="330"
               loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBIKk3uRcRxfiCP5-Nzz_5PA7GdAbf6dOY
       &q=Dogus+Teknoloji,Istanbul+Maslak"
             ></iframe>
@@ -44,11 +44,11 @@ export default function GetInTouchPage() {
           <form
             action="mailto:contact@developia.io"
             method="post"
-            enctype="text/plain"
+            encType="text/plain"
             className={styles.form}
           >
             <div className={styles.element}>
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="text"
                 id="email"
@@ -57,7 +57,7 @@ export default function GetInTouchPage() {
               />
             </div>
             <div className={styles.element}>
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea
                 name="message"
                 id="message"
@@ -67,7 +67,7 @@ export default function GetInTouchPage() {
               />
             </div>
             <div className={styles.element}>
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"

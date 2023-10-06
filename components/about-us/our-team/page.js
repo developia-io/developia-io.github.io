@@ -17,13 +17,25 @@ export default function OurTeam() {
 
       <div className={styles.container}>
         <div className={styles.card}>
-          <Image className={styles.image} src={umut} alt="umut" width={120} />
+          <Image
+            className={styles.image}
+            src={umut}
+            alt="umut"
+            width={120}
+            height={120}
+          />
           <h2>Umut Özel</h2>
           <p>CEO</p>
         </div>
         <div className={styles.line} />
         <div className={styles.card}>
-          <Image className={styles.image} src={mert} alt="mert" width={120} />
+          <Image
+            className={styles.image}
+            src={mert}
+            alt="mert"
+            width={120}
+            height={120}
+          />
           <h2>Mert Yavuz</h2>
           <p>CBO</p>
         </div>
