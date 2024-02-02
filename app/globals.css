@@ -16,7 +16,12 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: black;
+  min-height: 100vh;
+  background-color: #fff;
 }
 
 a {
@@ -37,7 +42,7 @@ a {
 }
 
 .swiper {
-  z-index: 0;
+  z-index: 0 !important;
 }
 
 .swiper-slide {
