@@ -3,7 +3,7 @@ import styles from "./about-us.module.css";
 import OurTeam from "@/components/AboutUs/OurTeam/page";
 import team from "@/public/about-us/team.png";
 import Chapters from "@/components/AboutUs/Chapters/page";
-import Banner from "@/components/Banner/page";
+import Banner from "@/components/Banner1/page";
 import chapters from "@/public/about-us/chapters/chapters";
 import icons from "@/public/about-us/icons/icons";
 
