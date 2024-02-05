@@ -7,7 +7,7 @@ import styles from "./header.module.css";
 import developia from "@/public/DEVELOPIA.png";
 import hamburger from "./hamburger.svg";
 import cross from "./cross.svg";
-import Button from "../Button1/page";
+import Button from "../Button/page";
 import { useState } from "react";
 
 function Header() {
