@@ -1,13 +1,13 @@
-import Hero from "@/components/home/hero/page";
-import WhatsDevelopia from "@/components/home/whats-developia/page";
+import Hero from "@/components/Home/Hero/page";
+import WhatsDevelopia from "@/components/Home/WhatsDevelopia/page";
 import styles from "./home.module.css";
-import WhatWeDo from "@/components/home/what-we-do/page";
-import Technologies from "@/components/home/technologies/page";
-import Clients from "@/components/home/clients/page";
-import OurWorks from "@/components/home/our-works/page";
+import WhatWeDo from "@/components/Home/WhatWeDo/page";
+import Technologies from "@/components/Home/Technologies/page";
+import Clients from "@/components/Home/Clients/page";
+import OurWorks from "@/components/Home/OurWorks/page";
 
 import { Inter } from "next/font/google";
-import Services from "@/components/home/services/page";
+import Services from "@/components/Home/Services/page";
 
 const inter = Inter({ subsets: ["latin"] });
 

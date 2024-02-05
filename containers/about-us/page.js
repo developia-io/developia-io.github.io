@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from "./about-us.module.css";
-import OurTeam from "@/components/about-us/our-team/page";
+import OurTeam from "@/components/AboutUs/OurTeam/page";
 import team from "@/public/about-us/team.png";
-import Chapters from "@/components/about-us/chapters/page";
-import Banner from "@/components/banner/page";
+import Chapters from "@/components/AboutUs/Chapters/page";
+import Banner from "@/components/Banner/page";
 import chapters from "@/public/about-us/chapters/chapters";
 import icons from "@/public/about-us/icons/icons";
 

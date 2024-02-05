@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Card from "./card/page";
+import Card from "./Card/page";
 import styles from "./our-works.module.css";
-import card_infos from "./card/card-infos";
+import card_infos from "./Card/card-infos";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";

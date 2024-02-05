@@ -12,7 +12,6 @@ export default function Hero() {
           <div className={styles.header_md}>New Generation</div>
           <div className={styles.header_l}>Start-up</div>
         </div>
-
         <Image className={styles.hero_img} src={heroImg} alt="hero image" />
       </div>
     </div>

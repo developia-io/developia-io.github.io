@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
+  padding: 0 2%;
   width: 100vw;
 }
 
@@ -42,10 +43,6 @@
 }
 
 @media only screen and (max-width: 399px) {
-  .hero {
-    margin-left: 15%;
-  }
-
   .title {
     position: relative;
     top: -15%;
@@ -76,10 +73,6 @@
 }
 
 @media only screen and (min-width: 400px) and (max-width: 499px) {
-  .hero {
-    margin-left: 15%;
-  }
-
   .title {
     position: relative;
     top: -15%;
@@ -110,10 +103,6 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 634px) {
-  .hero {
-    margin-left: 10%;
-  }
-
   .title {
     position: relative;
     top: -15%;
@@ -139,16 +128,12 @@
     width: 300px;
     height: auto;
     position: absolute;
-    top: 35%;
-    left: 40%;
+    top: 55%;
+    left: 30%;
   }
 }
 
 @media only screen and (min-width: 635px) and (max-width: 699px) {
-  .hero {
-    margin-left: 15%;
-  }
-
   .title {
     position: relative;
     top: -5%;
@@ -179,10 +164,6 @@
 }
 
 @media only screen and (min-width: 700px) and (max-width: 839px) {
-  .hero {
-    margin-left: 30px;
-  }
-
   .title {
     position: relative;
     top: -5%;
@@ -213,10 +194,6 @@
 }
 
 @media only screen and (min-width: 840px) and (max-width: 899px) {
-  .hero {
-    margin-left: 30px;
-  }
-
   .title {
     position: relative;
     top: -5%;
@@ -247,9 +224,6 @@
 }
 
 @media only screen and (min-width: 900px) and (max-width: 999px) {
-  .hero {
-    margin-left: 35px;
-  }
   .header_md {
     font-size: 3rem;
     font-weight: 700;
@@ -274,9 +248,6 @@
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1157px) {
-  .hero {
-    margin-left: 40px;
-  }
   .header_md {
     font-size: 3rem;
     font-weight: 700;

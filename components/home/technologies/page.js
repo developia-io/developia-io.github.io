@@ -5,13 +5,24 @@ import Image from "next/image";
 import styles from "./technologies.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useEffect, useState } from "react";
 
 export default function Technologies() {
+  const [slidesPerView, setSlidesPerView] = useState(8);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setSlidesPerView(3);
+    } else {
+      setSlidesPerView(8);
+    }
+  }, []);
+
   return (
     <div className={styles.wrapper} id="technologies">
       <h1 className={`${styles.title} title`}>WHAT TECHNOLOGIES DO WE USE?</h1>
       <Swiper
-        slidesPerView={8}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         loop={true}
         speed={2500}
@@ -30,7 +41,7 @@ export default function Technologies() {
         ))}
       </Swiper>
       <Swiper
-        slidesPerView={8}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         loop={true}
         speed={2500}

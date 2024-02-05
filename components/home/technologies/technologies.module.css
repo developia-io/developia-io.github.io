@@ -27,9 +27,9 @@
 
 .title {
   display: flex;
-  width: 100%;
+  text-wrap: balance;
+  width: fit-content;
   max-width: var(--max-width);
-  margin: 100px 2% 0 2%;
 }
 
 .sub_title {

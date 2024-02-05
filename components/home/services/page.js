@@ -7,7 +7,6 @@ export default function Services() {
     <div className={styles.wrapper} id="services">
       <div className={styles.container}>
         <h1 className="title">Services</h1>
-
         <div className={styles.card_container}>
           <div className={styles.card}>
             <div className={styles.head}>
